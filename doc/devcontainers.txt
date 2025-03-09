@@ -1,0 +1,46 @@
+==============================================================================
+------------------------------------------------------------------------------
+                                                        *Devcontainers.toggle()*
+                            `Devcontainers.toggle`()
+Toggle the plugin by calling the `enable`/`disable` methods respectively.
+
+------------------------------------------------------------------------------
+                                                        *Devcontainers.enable()*
+                        `Devcontainers.enable`({scope})
+Initializes the plugin, sets event listeners and internal state.
+
+------------------------------------------------------------------------------
+                                                       *Devcontainers.disable()*
+                           `Devcontainers.disable`()
+Disables the plugin, clear highlight groups and autocmds, closes side buffers and resets the internal state.
+
+
+==============================================================================
+------------------------------------------------------------------------------
+                                                         *Devcontainers.options*
+                            `Devcontainers.options`
+Devcontainers configuration with its default values.
+
+Type ~
+`(table)`
+Default values:
+>lua
+  Devcontainers.options = {
+      -- Prints useful logs about what event are triggered, and reasons actions are executed.
+      debug = false,
+  }
+
+<
+------------------------------------------------------------------------------
+                                                         *Devcontainers.setup()*
+                        `Devcontainers.setup`({options})
+Define your devcontainers setup.
+
+Parameters ~
+{options} `(table)` Module config table. See |Devcontainers.options|.
+
+Usage ~
+`require("devcontainers").setup()` (add `{}` with your |Devcontainers.options| table)
+
+
+ vim:tw=78:ts=8:noet:ft=help:norl:
